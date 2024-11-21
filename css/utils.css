@@ -1,0 +1,12 @@
+.btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.copyright{
+    text-align: center;
+    margin-top:15px ;
+    margin-bottom: 15px;
+}

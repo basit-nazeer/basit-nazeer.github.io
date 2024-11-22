@@ -34,7 +34,7 @@ nav ul li a {
 .hire {
     text-align: center;
     margin-top: 130px;
-    font-size: 30px;
+    font-size: 25px;
     font-family: "DotGothic16", "Josefin Sans";
     letter-spacing: 5px;
 }
@@ -43,8 +43,8 @@ nav ul li a {
 .mail{
     height: 23vh;
     text-align: center;
-    margin: 50px;
-    font-size: 8vh;
+    margin-top: 50px;
+    font-size: 12px;
     font-family: "DotGothic16", "Josefin Sans";
     letter-spacing: 5px;
     font-weight: 600;

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=DotGothic16&family=Geist+Mono:wght@100..900&display=swap');
+
+@font-face {
+    font-family: minecraft;
+    src: url('../fonts/minecraft.otf') format('opentype');
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+}
+
+header {
+    font-family: "minecraft", sans-serif;
+    font-size: 18px;
+}
+
+nav ul {
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 100px 0 0;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.colomn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+
+.photo img {
+    flex-wrap: wrap;
+    width: 320px;
+    height: 300px;
+    margin: 10px 0;
+    object-fit: cover;
+    aspect-ratio: 3;
+
+}
+
+.thumb img {
+    flex-wrap: wrap;
+    width: 391px;
+    height: 220px;
+    margin-top: 7px;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 7px;
+    margin-left: 7px;
+}
+
+
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.8rem; /* Adjust padding for circle size */
+    border-radius: 100%; /* Make the arrow circular */
+    cursor: pointer;
+    user-select: none;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+}
+
+.left-arrow {
+    left: 5%;
+}
+
+.right-arrow {
+    right: 5%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .arrow {
+        font-size: 1.5rem;
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+}
+
+
+/* Thumbnail container styles */
+.thumbnail-container img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.thumbnail-container img:hover {
+    filter: brightness(50%); /* Darkens the image */
+    transform: scale(1.05); /* Adds a slight zoom effect */
+}
+
